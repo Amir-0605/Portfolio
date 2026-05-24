@@ -11,3 +11,32 @@ html {
   padding: 0 80px;
 }
 
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.dark body {
+  background: black;
+  color: white;
+}
+
+.dark header {
+  background-color: black;
+  color: white;
+}
+
+.dark #Skills {
+  background-color: black;
+  color: white;
+}
+
+.dark #experience{
+  background-color: black;
+  color: #fff;
+}
+
+.dark #github:hover{
+  background-color: #fff;
+  color: black;
+}

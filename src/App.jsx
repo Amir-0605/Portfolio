@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './Companents/Header/Header'
-  import Skills from './Companents/Skills/Skills'
-import Experience from './Companents/Experience/Experience'
+import Skills from './Companents/Skills/Skills'
 import Projects from './Companents/Projects/Projects'
 import Contact from './Companents/Contact/Contact'
 import Footer from './Companents/Footer/Footer'
@@ -13,7 +12,7 @@ const App = () => {
       <Header />
       <Home />
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
       <Projects />
       <Contact />
       <Footer />

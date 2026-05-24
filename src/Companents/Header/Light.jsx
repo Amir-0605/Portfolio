@@ -1,17 +1,28 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from "react";
+import { FiSun } from "react-icons/fi";
+import { FaRegMoon } from "react-icons/fa";
 
 const Light = () => {
-    const [theme, setTheme] = useState('light')
-    const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    };
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("theme");
+    setDarkMode(saved === "dark");
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
 
   return (
-    <div>
-      <button onClick={toggleTheme}></button>
-    </div>
-  )
-}
+    <button
+      onClick={() => setDarkMode(prev => !prev)}
+      className="p-2 rounded-xl bg-gray-200 dark:bg-gray-800 cursor-pointer text-black dark:text-white transition"
+    >
+      {darkMode ? <FiSun /> : <FaRegMoon />}
+    </button>
+  );
+};
 
-
-export default Light
+export default Light;

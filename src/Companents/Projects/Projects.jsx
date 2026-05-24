@@ -12,7 +12,7 @@ const Projects = () => {
                 <div viewport={{ once: true }} whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 50 }} transition={{ duration: 0.8 }} className='flex items-center flex-col mt-10 mb-10 gap-3'>
                     <h1 className='text-4xl font-medium flex'>Projects <p className='text-blue-500'>.</p></h1>
                     <p className='text-gray-500'>A selection of my best works combining creativity, performance, and modern tech.</p>
-                    <div className='grid grid-cols-3 gap-5'>
+                    <div className='grid grid-cols-3 gap-5 mt-10'>
                         <div className='border border-gray-300 w-110 rounded-xl hover:scale-103 cursor-pointer duration-300 ease-out hover:shadow-lg shadow-cyan-500/50'>
                             <div>
                                 <img src="/src/assets/Portfolio2.png" alt="Portfolio" className='w-100% h-60 hover:scale-103 duration-300 ease-out rounded-xl' />
@@ -31,7 +31,7 @@ const Projects = () => {
                                 </span>
                                 <div className='flex justify-between items-center pl-4 pr-4 mt-2'>
                                     <a className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out text-blue-500 hover:bg-blue-500 hover:text-white'><CiShare1 />Demo</a>
-                                    <a href='https://github.com/Amir-0605' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out hover:bg-black hover:text-white'><FaGithub />Code</a>
+                                    <a id='github' href='https://github.com/Amir-0605' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out hover:bg-black hover:text-white'><FaGithub />Code</a>
                                 </div>
                             </div>
                         </div>
@@ -41,10 +41,10 @@ const Projects = () => {
                             </div>
                             <div className='p-5 flex flex-col gap-3'>
                                 <h1 className='font-bold text-2xl'>Modern Calculator</h1>
-                                <p className='text-gray-500 mt-8'>Front-end developer with a passion for scalable architecture, clean code,
-                                    and high-quality UI/UX. Experienced in React, Tailwind. I enjoy building systems that are both visually beautiful
-                                    and  technically solid. Always improving, always learning.</p>
-                                <span className='flex items-center justify-center gap-4 text-3xl pt-2'>
+                                <p className='text-gray-500 mt-8'>A modern calculator designed with a clean and minimal interface.
+                                    It provides fast and accurate calculations with
+                                    an intuitive layout, ensuring a smooth user experience on both desktop and mobile devices.</p>
+                                <span className='flex items-center pt-8 justify-center gap-4 text-3xl pt-2'>
                                     <FaHtml5 />
                                     <FaCss3Alt />
                                     <BsJavascript />
@@ -52,8 +52,8 @@ const Projects = () => {
                                     <FaReact />
                                 </span>
                                 <div className='flex justify-between items-center pl-4 pr-4 mt-2'>
-                                    <a className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out text-blue-500 hover:bg-blue-500 hover:text-white'><CiShare1 />Demo</a>
-                                    <a href='https://github.com/Amir-0605' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out hover:bg-black hover:text-white'><FaGithub />Code</a>
+                                    <a href='https://calculatorrea.netlify.app' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out text-blue-500 hover:bg-blue-500 hover:text-white'><CiShare1 />Demo</a>
+                                    <a id='github' href='https://github.com/Amir-0605' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out hover:bg-black hover:text-white'><FaGithub />Code</a>
                                 </div>
                             </div>
                         </div>
@@ -75,8 +75,8 @@ const Projects = () => {
                                     <FaReact />
                                 </span>
                                 <div className='flex justify-between items-center pl-4 pr-4 mt-2'>
-                                    <a className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out text-blue-500 hover:bg-blue-500 hover:text-white'><CiShare1 />Demo</a>
-                                    <a href='https://github.com/Amir-0605' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out hover:bg-black hover:text-white'><FaGithub />Code</a>
+                                    <a href='https://todolistreacttt.netlify.app' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out text-blue-500 hover:bg-blue-500 hover:text-white'><CiShare1 />Demo</a>
+                                    <a id='github' href='https://github.com/Amir-0605' className='flex items-center gap-5 border rounded-xl p-2 duration-300 ease-out hover:bg-black hover:text-white'><FaGithub />Code</a>
                                 </div>
                             </div>
                         </div>
